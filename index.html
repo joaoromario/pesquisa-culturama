@@ -71,6 +71,7 @@
         <!-- Perfil -->
         <fieldset>
           <legend>Perfil</legend>
+          <!-- genero -->
           <p>Gênero:</p>
           <input type="radio" name="userGender" id="feminino" value="female" />
           <label for="feminino">Feminino</label>
@@ -92,8 +93,9 @@
           <label for="notInformed">Prefiro não informar</label>
 
           <br />
+          <!-- estado civil -->
           <label for="maritalStatus">Estado civil</label>
-          <select name="maritalStatus" id="maritalStatus">
+          <select name="maritalStatus" id="maritalStatus" required>
             <option value="notInformed">Selecione</option>
             <option value="casado">Casado(a)</option>
             <option value="solteiro">Solteiro(a)</option>
@@ -102,8 +104,9 @@
             <option value="uniaoStavel">União Estável</option>
           </select>
 
+          <!-- estado -->
           <label for="userState">Estado</label>
-          <select name="userState" id="userState">
+          <select name="userState" id="userState" required>
             <option value="AC">AC</option>
             <option value="AL">AL</option>
             <option value="AP">AP</option>
@@ -132,6 +135,16 @@
             <option value="SE">SE</option>
             <option value="TO">TO</option>
           </select>
+
+          <!-- cidade -->
+          <label for="userCity">Cidade</label>
+          <input
+            type="text"
+            name="userCity"
+            id="userCity"
+            placeholder="Cidade"
+            required
+          />
         </fieldset>
 
         <!-- Botão de envio do formulário -->
