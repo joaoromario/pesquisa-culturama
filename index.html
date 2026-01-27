@@ -41,6 +41,7 @@
                 <input type="file" accept="image/*" name="userImage" id="userImage">
             </fieldset>
                 
+            <!-- Perfil -->
             <fieldset>
                 <legend>Perfil</legend>
                 <p>Gênero:</p>
@@ -52,6 +53,18 @@
                 
                 <input type="radio" name="userGender" id="notInformed" value="notInformed">
                 <label for="notInformed">Prefiro não informar</label>
+
+                <br>
+                <label for="maritalStatus">Estado civil</label>
+                <select name="maritalStatus" id="maritalStatus">
+                    <option value="notInformed">Selecione</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viúvo(a)</option>
+                    <option value="uniaoStavel">União Estável</option>
+
+                </select>
             </fieldset>
                 <br>
                 <button type="submit">Enviar</button>
