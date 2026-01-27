@@ -1,74 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pesquisa Culturama</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Cabeçalho da página -->
     <head>
-        <h1>Pesquisa Online</h1>
+      <h1>Pesquisa Online</h1>
     </head>
 
     <section>
-        <form action="" method="get">
-            
-            <fieldset> <!-- Agrupa Campos do Formulário -->
+      <form action="" method="get">
+        <fieldset>
+          <!-- Agrupa Campos do Formulário -->
 
-                <!-- Dados Pessoais -->
-                <legend>Dados Pessoais</legend>
-                <label for="userName">Nome</label>
-                <input type="text" name="userName" id="userName" placeholder="Name" required>
-                <br>
-                
-                <label for="userAge">Idade</label>
-                <input type="number" name="userAge" id="userAge" placeholder="Idade" min="12" max="100" required>
-                
-                <br>
-                <label for="birthDate">Data de nascimento</label>
-                <input type="date" name="birthDate" id="birthDate" required>
-                
-                <br>
-                <label for="userEmail">Email</label>
-                <input type="email" name="userEmail" id="userEmail" placeholder="Email" required>
-                
-                <br>
-                <label for="userPhoneNumber">Telefone</label>
-                <input type="tel" name="userPhoneNumber" id="userPhoneNumber" placeholder="DDD + Número" required pattern="[0-9]{11}">
-                
-                <br>
-                <input type="file" accept="image/*" name="userImage" id="userImage">
-            </fieldset>
-                
-            <!-- Perfil -->
-            <fieldset>
-                <legend>Perfil</legend>
-                <p>Gênero:</p>
-                <input type="radio" name="userGender" id="feminino" value="female">
-                <label for="feminino">Feminino</label>
-                
-                <input type="radio" name="userGender" id="masculino" value="masculino">
-                <label for="masculino">Masculino</label>
-                
-                <input type="radio" name="userGender" id="notInformed" value="notInformed">
-                <label for="notInformed">Prefiro não informar</label>
+          <!-- Dados Pessoais -->
+          <legend>Dados Pessoais</legend>
+          <label for="userName">Nome</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Name"
+            required
+          />
+          <br />
 
-                <br>
-                <label for="maritalStatus">Estado civil</label>
-                <select name="maritalStatus" id="maritalStatus">
-                    <option value="notInformed">Selecione</option>
-                    <option value="casado">Casado(a)</option>
-                    <option value="solteiro">Solteiro(a)</option>
-                    <option value="divorciado">Divorciado(a)</option>
-                    <option value="viuvo">Viúvo(a)</option>
-                    <option value="uniaoStavel">União Estável</option>
+          <label for="userAge">Idade</label>
+          <input
+            type="number"
+            name="userAge"
+            id="userAge"
+            placeholder="Idade"
+            min="12"
+            max="100"
+            required
+          />
 
-                </select>
-            </fieldset>
-                <br>
-                <button type="submit">Enviar</button>
-        </form>
+          <br />
+          <label for="birthDate">Data de nascimento</label>
+          <input type="date" name="birthDate" id="birthDate" required />
+
+          <br />
+          <label for="userEmail">Email</label>
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="Email"
+            required
+          />
+
+          <br />
+          <label for="userPhoneNumber">Telefone</label>
+          <input
+            type="tel"
+            name="userPhoneNumber"
+            id="userPhoneNumber"
+            placeholder="DDD + Número"
+            required
+            pattern="[0-9]{11}"
+          />
+
+          <br />
+          <input type="file" accept="image/*" name="userImage" id="userImage" />
+        </fieldset>
+
+        <!-- Perfil -->
+        <fieldset>
+          <legend>Perfil</legend>
+          <p>Gênero:</p>
+          <input type="radio" name="userGender" id="feminino" value="female" />
+          <label for="feminino">Feminino</label>
+
+          <input
+            type="radio"
+            name="userGender"
+            id="masculino"
+            value="masculino"
+          />
+          <label for="masculino">Masculino</label>
+
+          <input
+            type="radio"
+            name="userGender"
+            id="notInformed"
+            value="notInformed"
+          />
+          <label for="notInformed">Prefiro não informar</label>
+
+          <br />
+          <label for="maritalStatus">Estado civil</label>
+          <select name="maritalStatus" id="maritalStatus">
+            <option value="notInformed">Selecione</option>
+            <option value="casado">Casado(a)</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+            <option value="uniaoStavel">União Estável</option>
+          </select>
+
+          <label for="userState">Estado</label>
+          <select name="userState" id="userState">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+          </select>
+        </fieldset>
+
+        <!-- Botão de envio do formulário -->
+        <br />
+        <button type="submit">Enviar</button>
+      </form>
     </section>
-</body>
+  </body>
 </html>
