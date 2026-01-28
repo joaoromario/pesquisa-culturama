@@ -197,6 +197,52 @@
           <input type="color" name="favColor" id="favColor" value="#000000" />
         </fieldset>
 
+        <!-- Opinião -->
+        <fieldset>
+          <legend>Opinião</legend>
+          <p>O que você acha da qualidade do nosso serviço?</p>
+
+          <input
+            type="radio"
+            name="userServiceOpinion"
+            value="otimo"
+            id="otimo"
+          />
+          <label for="otimo">Ótimo</label>
+
+          <br />
+          <input type="radio" name="userServiceOpinion" value="boa" id="boa" />
+          <label for="boa">Boa</label>
+
+          <br />
+          <input
+            type="radio"
+            name="userServiceOpinion"
+            value="regular"
+            id="regular"
+          />
+          <label for="regular">Regular</label>
+
+          <br />
+          <input
+            type="radio"
+            name="userServiceOpinion"
+            value="ruim"
+            id="ruim"
+          />
+          <label for="ruim">Ruim</label>
+
+          <br />
+          <label for="comment">Escreva sua opinião:</label>
+          <br />
+          <textarea
+            name="userComment"
+            id="comment"
+            cols="30"
+            rows="5"
+            placeholder="Escreva sua opinião aqui..."
+          ></textarea>
+        </fieldset>
         <!-- Botão de envio do formulário -->
         <br />
         <button type="submit">Enviar</button>
