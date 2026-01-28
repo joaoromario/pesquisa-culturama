@@ -13,9 +13,8 @@
 
     <section>
       <form action="" method="get">
+        <!-- Agrupa Campos do Formulário -->
         <fieldset>
-          <!-- Agrupa Campos do Formulário -->
-
           <!-- Dados Pessoais -->
           <legend>Dados Pessoais</legend>
           <label for="userName">Nome</label>
@@ -146,6 +145,31 @@
             autocomplete="address-level2"
             required
           />
+        </fieldset>
+
+        <!-- Habitos -->
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes Sociais</p>
+          <input
+            type="checkbox"
+            name="social"
+            value="Instagram"
+            id="instagram"
+          />
+          <label for="instagram">Instagram</label>
+
+          <br />
+          <input type="checkbox" name="social" value="Facebook" id="facebook" />
+          <label for="facebook">Facebook</label>
+
+          <br />
+          <input type="checkbox" name="social" value="X" id="x" />
+          <label for="x">X</label>
+
+          <br />
+          <input type="checkbox" name="social" value="LinkedIn" id="linkedin" />
+          <label for="linkedin">LinkedIn</label>
         </fieldset>
 
         <!-- Botão de envio do formulário -->
