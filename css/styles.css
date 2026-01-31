@@ -33,6 +33,7 @@ form {
   padding: 20px;
   border-radius: 35px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
 }
 
 fieldset {
@@ -51,6 +52,10 @@ legend {
 label {
   display: inline-block;
   margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 input,
@@ -79,18 +84,39 @@ input[type="color"] {
   padding: 0 5px;
 }
 
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
 button {
-  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+}
+button[type="submit"] {
+  background-color: #4caf50;
 }
 
-button#reset {
+button[type="reset"] {
   background-color: #f44336;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="reset"]:hover {
+  background-color: #e53935;
 }
 
 div#buttonWrapper {
