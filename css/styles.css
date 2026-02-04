@@ -58,6 +58,16 @@ p {
   margin-bottom: 10px;
 }
 
+input[type="tel"],
+input[type="file"] {
+  margin-bottom: 0;
+}
+
+small {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
 input,
 select,
 textarea {
