@@ -71,15 +71,23 @@
               placeholder="DDD + Número"
               required
               pattern="[0-9]{11}"
+              aria-describedby="phoneHelp"
             />
+            <small id="phoneHelp"
+              >Preencha com 11 dígitos no formato: DDD + Número sem espaços ou
+              hífen</small
+            >
 
             <br />
+            <label for="userImage">Upload de foto</label>
             <input
               type="file"
               accept="image/*"
               name="userImage"
               id="userImage"
+              aria-describedby="imageHelp"
             />
+            <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
           </fieldset>
 
           <!-- Perfil -->
@@ -304,8 +312,12 @@
           <!-- Botão de envio do formulário -->
           <br />
           <div id="buttonWrapper">
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+            <button type="submit" aria-label="Enviar dados do formulário">
+              Enviar
+            </button>
+            <button type="reset" aria-label="Limpar dados do formulário">
+              Limpar
+            </button>
           </div>
         </form>
       </section>
